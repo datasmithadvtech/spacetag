@@ -1,32 +1,33 @@
 # SpaceTag
 
-Aplikacja internetowa do śledzenia elementów orbitalnych w 3D.
+A web application for tracking orbital features in 3D.
 
-Strona internetowa wyświetla aktualne pozycje wybranych elementów orbitalnych,
-które wyznaczane są przy użyciu danych w formacie
-[TLE (Two-Line Element)](https://pl.wikipedia.org/wiki/TLE), uzyskiwanych z
-systemu [CelesTrak](https://celestrak.org/). Aplikacja pozwala na dodanie
-dowolnej ilości satelit, wraz z możliwością przypisania do każdego z nich
-wybranego koloru znacznika oraz trajektorii. Możliwe jest wyświetlanie
-przeszłych oraz przyszłych pozycji elementów poprzez wprowadzenie odpowiedniej
-daty i czasu.
+The website displays the current positions of selected orbital elements,
+which are determined using data in the format
+[TLE (Two-Line Element)](https://pl.wikipedia.org/wiki/TLE), obtained from
+system [CelesTrak](https://celestrak.org/). 
 
-## Geneza projektu
+The application allows you to add
+any number of satellites, with the possibility of assigning them to each of them
+selected marker color and trajectory. Display is possible
+past and future item positions by entering the appropriate one
+date and time.
+## Origin of the project
 
-W dniach 1-2 października 2022 roku odbyła się coroczna edycja globalnego
-hackathonu
+The annual edition of global took place on October 1-2, 2022
+hackathon
 [NASA International Space Apps Challenge](https://www.spaceappschallenge.org/).
-Organizatorem podkarpackiego wydarzenia
+The organizer of the Podkarpacie event
 [Subcarpathian NASA Space Apps Challenge](https://2022.spaceappschallenge.org/locations/rzeszow/event)
 było [Podkarpackie Centrum Innowacji](https://pcinn.org/). 26 drużyn zgromadziło
 się w
 [Centrum Sportu Akademickiego Politechniki Rzeszowskiej](https://csa.prz.edu.pl/),
-aby w ciągu 28 godzin zrealizować projekt na wybrany temat, spośród 22 zadań
-przygotowanych przez NASA.
+to complete a project on a selected topic from among 22 tasks within 28 hours
+prepared by NASA.
 
-Ośmiu reprezentantów
+Eight representatives
 [Studenckiego Koła Naukowego Informatyków "KOD"](https://kod.prz.edu.pl/)
-utworzyło dwa czteroosobowe zespoły. Drużyna
+formed two four-person teams. Team
 [SKNI KOD](https://2022.spaceappschallenge.org/challenges/2022-challenges/mars-habitat/teams/skni-kod/project)
 podjął się zaprojektowania wielofunkcyjnego narzędzia z użyciem drukarki 3D,
 natomiast zespół
@@ -35,69 +36,69 @@ zajął się implementacją aplikacji internetowej do śledzenia
 [Międzynarodowej Stacji Kosmicznej](https://pl.wikipedia.org/wiki/Mi%C4%99dzynarodowa_Stacja_Kosmiczna)
 w 3D.
 
-Drużyny te odniosły sukces,
+These teams were successful,
 [zajmując kolejno I oraz III miejsce wśród podkarpackich zespołów](https://kod.prz.edu.pl/article/73-space-apps-hackathon-20222),
-a także zdobywając liczne wyróżnienia w poszczególnych kategoriach. Z uwagi duży
-potencjał pracy wykonanej w ciągu ponad doby przez zespół 500 ISS, zadecydowano
-o kontynuuacji projektu w ramach działalności koła naukowego pod nową nazwą
-SpaceTag. Jego nowym celem jest udoskonalenie aplikacji oraz implementacja
-nowych funkcji umożliwiających śledzenie nie tylko Międzynarodowej Stacji
-Kosmicznej, lecz dowolnych elementów orbitalnych.
+as well as winning numerous awards in individual categories. Because of the large
+potential of the work performed in over 24 hours by the 500 ISS team, it was decided
+about the continuation of the project as part of the activities of the scientific club under a new name
+SpaceTag. His new goal is to improve the application and implementation
+new functions enabling tracking not only of the International Station
+Cosmic, but any orbital elements.
 
-## Zastosowane technologie
+## Technologies used
 
-Projekt wyróżnia się zastosowaniem nowoczesnych, dopiero zysykujących
-popularność rozwiązań do tworzenia aplikacji internetowych.
+The project is distinguished by the use of modern, gaining popularity
+popularity of solutions for creating web applications
 
 ### [TypeScript](https://www.typescriptlang.org/)
 
-Silnie typowany język, jakim jest TypeScript, posiada nieocenione zalety w
-porównaniu z jego dynamicznie typowanym odpowiednikiem - JavaScript. Dzięki
-zaawansowanemu wnioskowaniu kompilatora, potencjalne błędy są wykrywane już
-podczas wprowadzania zmian w pliku, a edytor jest w stanie automatycznie
-uzupełniać właściwości obiektów czy wyświetlać dokumentację dotyczącą użytych
-funkcji oraz zmiennych. Zalety te w szczególności ułatwiają pracę zespołową oraz
-wdrażanie nowych osób do projektu.
+A strongly typed language such as TypeScript has invaluable advantages in...
+compared to its dynamically typed counterpart - JavaScript. Thanks
+advanced compiler inference, potential errors are detected already
+when you make changes to the file, and the editor is able to automatically
+complete the properties of objects or display documentation about the objects used
+functions and variables. These advantages in particular facilitate teamwork and
+introducing new people to the project.
 
 ### [React](https://beta.reactjs.org/)
 
-React to obecnie najpopularniejsza biblioteka do tworzenia interaktywnych
-interfejsów użytkownika. Pozwala na implementację widoków w sposób deklaratywny,
-którego kod jest prostszy w zapisie i bardziej przewidywalny. Umożliwia
-tworzenie komponentów zarządzających swoim własnym stanem, oraz składanie ich w
-większą całość. React stawia na minimalizm, skupiając się wyłącznie na
-renderowaniu strony - resztę pozostawia społeczności, dzięki czemu w jego
-ekosystemie ciągle powstają innowacyjne rozwiązania.
+React is currently the most popular library for interactive development
+user interfaces. It allows you to implement views in a declarative way,
+whose code is simpler to write and more predictable. It enables
+creating components that manage their own state, and assembling them into
+greater whole. React focuses on minimalism, focusing solely on
+rendering the page - he leaves the rest to the community, thanks to which in his
+innovative solutions are constantly being created in the ecosystem.
 
 ### [Next.js](https://nextjs.org/)
 
-Next.js to framework pozwalający na generowanie aplikacji internetowych z
-użyciem biblioteki React po stronie serwera - zarówno statycznie jak i na
-żądanie. Umożliwia tworzenie pełnoprawnego API w architekturze serverless.
-Posiada wiele funkcji usprawniających działanie aplikacji, w tym optymalizację
-obrazów, czy czcionek.
+Next.js is a framework that allows you to generate web applications from
+using the React library on the server side - both statically and on
+task. It allows you to create a full-fledged API in a serverless architecture.
+It has many functions that improve the operation of the application, including optimization
+images or fonts.
 
 ### [Tailwind CSS](https://tailwindcss.com/)
 
-Tailwind CSS to biblioteka ułatwiająca stylowanie nowoczesnych aplikacji.
-Zastosowanie atomowego podejścia oraz generowanie wyłącznie użytych w kodzie
-klas CSS skutkuje szybszym ładowaniem strony. Tailwind oferuje również możliwość
-stworzenia własnego design systemu, wymuszając konsekwentny kod całym projekcie.
+Tailwind CSS is a library that makes it easy to style modern applications.
+Using an atomic approach and generating only those used in the code
+CSS classes result in faster page loading. Tailwind also offers the option
+create your own system design, enforcing consistent code throughout the project.
 
 ### [tRPC](https://trpc.io/)
 
-tRPC umożliwia tworzenie bezpiecznie typowanych API bez generacji kodu,
-wykorzystując w pełni potencjał wnioskowania kompilatora TypeScript. Jakakolwiek
-zmiana w kodzie po stronie serwera skutkuje natychmiastowym wyświetleniem błędu
-w edytorze po stronie klienta. Oferuje również w pełni bezpiecznie typowaną
-implementację popularnej biblioteki do zarządzania asynchronicznym stanem
-[TanStack Query](https://tanstack.com/query/v4), ułatwiając pobieranie i
-kontrolowanie pobranych z API danych.
+tRPC allows you to create safely typed APIs without code generation,
+taking full advantage of the inference potential of the TypeScript compiler. Any
+a change in the server-side code results in an immediate error
+in the client-side editor. It also offers fully safe betting
+implementation of a popular library for managing asynchronous state
+[TanStack Query](https://tanstack.com/query/v4), making it easier to download and
+controlling data downloaded from the API.
 
 ### [Three.js](https://threejs.org/)
 
-Three.js to popularna, prosta w użyciu, niewielka oraz wieloplatformowa
-biblioteka do grafiki 3D dla języka JavaScript.
+Three.js is popular, easy to use, small and cross-platform
+3D graphics library for JavaScript.
 [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) natomiast umożliwia
 tworzenie scen w Three.js w sposób deklaratywny, z użyciem Reacta jako
 renderera.
